@@ -1,13 +1,32 @@
 #include <iostream>
 #include <string>
 using namespace std;
+
+double add (double x, double y){
+	return x+y;
+}
+
+double multiply (double x, double y){
+	return x*y;
+}
+
+double subtract (double x, double y){
+	return x-y;
+}
+
+double divide (double x, double y){
+	return x/y;
+}
+
 void main ()
 {
-	int x;
-	int y;
+	double x;
+	double y;
+	
 	
 	char a;
 	char m;
+	
 
 do {
 	cout<< "Type first number"<<endl;
@@ -21,19 +40,19 @@ do {
 	
 	if ( a == '*') {
 		cout<<"The calclation is:"<<endl;
-		cout<< x*y<<endl;
+		cout<< multiply(x,y) <<endl;
 	}
 	else if (a == '+'){
 		cout<<"The calclation is:"<<endl;
-		cout<< x+y<<endl;
+		cout<< add(x,y)<<endl;
 	}
 	else if (a == '-'){
 		cout<<"The calclation is:"<<endl;
-		cout<<x-y<<endl;
+		cout<<subtract(x,y)<<endl;
 	}
 	else if (a == '/'){
 		cout<<"The calclation is:"<<endl;
-		cout<<x/y<<endl;
+		cout<<divide(x,y)<<endl;
 	}
 	else {
 		cout<< "Error! Operation is not recognized"<<endl;
